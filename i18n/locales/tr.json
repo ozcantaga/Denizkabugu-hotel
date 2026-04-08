@@ -1,0 +1,103 @@
+{
+  "hotelName": "Deniz Kabuğu Hotel",
+  "welcome": "Deniz Kabuğu'na Hoş Geldiniz",
+  "categories": {
+    "breakfast": "Kahvaltı",
+    "main_courses": "Ana Yemekler",
+    "salads": "Salatalar",
+    "snacks": "Hızlı Lezzetler",
+    "beverages": "İçecekler",
+    "alcohol": "Alkol",
+    "desserts": "Tatlılar"
+  },
+  "subCategories": {
+    "classic": "Klasik",
+    "hots": "Sıcaklar",
+    "appetizers": "Başlangıçlar",
+    "cocktails": "Kokteyller",
+    "grill_burger": "Izgara & Burger",
+    "pastas": "Makarnalar",
+    "sides": "Yan Lezzetler",
+    "salads": "Salatalar",
+    "cold_drinks": "Soğuklar",
+    "hot_drinks": "Sıcaklar",
+    "beers": "Bira",
+    "whiskey": "Viski",
+    "raki": "Rakı"
+  },
+  "breakfast": {
+    "serpme_name": "Serpme Kahvaltı",
+    "serpme_desc": "Peynir çeşitleri, bal-kaymak, zeytinler ve sıcak başlangıçlar.",
+    "omlet_name": "Omlet",
+    "omlet_desc": "Taze çiftlik yumurtası ve tereyağı ile.",
+    "menemen_name": "Menemen",
+    "menemen_desc": "Geleneksel domates, biber ve yumurta karışımı."
+  },
+  "snacks": {
+    "burger_name": "Klasik Burger",
+    "burger_desc": "180gr dana köfte, karamelize soğan, özel sos ve patates kızartması.",
+    "manti_name": "Ev Mantısı",
+    "manti_desc": "Yoğurt ve yanık tereyağı ile el açması geleneksel mantı.",
+    "taco_name": "Sokak Tacoları",
+    "taco_desc": "Ağır ateşte pişmiş dana kaburga, kişniş, lime ve pico de gallo.",
+    "mini_burger_name": "Mini Burger Üçlüsü",
+    "mini_burger_desc": "Ev yapımı soslar, karamelize soğan ve cheddar peyniri ile hazırlanan 3'lü burger seti."
+  },
+  "salads": {
+    "greek_name": "Yunan Salatası",
+    "greek_desc": "Domates, salatalık, beyaz peynir, zeytin ve kekikli kırmızı soğan.",
+    "coban_name": "Çoban Salatası",
+    "coban_desc": "İnce kıyılmış domates, salatalık, biber ve soğanlı limon soslu salata.",
+    "special_name": "Deniz Kabuğu Special",
+    "special_desc": "Mevsim yeşillikleri, ceviz, nar ekşisi ve şefin özel sosu."
+  },
+  "main": {
+    "bolonez_name": "Spagetti Bolonez",
+    "bolonez_desc": "Parmesan peyniri eşliğinde geleneksel İtalyan kıymalı sos.",
+    "kofte_name": "Kasap Köfte",
+    "kofte_desc": "Izgara baharatlı köfte, pilav ve közlenmiş biber ile.",
+    "fries_name": "Patates Kızartması",
+    "fries_desc": "Çıtır patates, trüflü mayonez ile.",
+    "arrabiata_name": "Penne Arrabiata",
+    "arrabiata_desc": "Sarımsak, acı pul biber ve taze maydanozlu acılı domates sosu.",
+    "pesto_name": "Pesto Soslu Makarna",
+    "pesto_desc": "Taze fesleğen, çam fıstığı, sarımsak ve parmesanlı zeytinyağlı sos.",
+    "chef_burger_name": "Şefin İmza Burgeri",
+    "chef_burger_desc": "180gr sulu dana köfte, karamelize soğan, cheddar ve şefin gizli sosu."
+  },
+  "alcohol": {
+    "carlsberg": "Carlsberg 33cl",
+    "miller": "Miller 33cl",
+    "corona": "Corona 35.5cl",
+    "jack_daniels": "Jack Daniels",
+    "chivas": "Chivas Regal 12 Y.O",
+    "jameson": "Jameson Irish",
+    "raki_70": "Yeni Rakı (Yeni Seri) 70cl",
+    "raki_35": "Yeni Rakı (Yeni Seri) 35cl",
+    "raki_gobek": "Beylerbeyi Göbek 70cl",
+    "jd_desc": "Karamel ve meşe notalı Tennessee viskisi.",
+    "chivas_desc": "Premium harmanlanmış İskoç viskisi.",
+    "jameson_desc": "Üç kez damıtılmış, yumuşak içimli İrlanda viskisi.",
+    "raki_std_desc": "Yumuşak bitişli, saf anason aroması.",
+    "raki_prem_desc": "3 kez distile edilmiş, %100 yaş üzüm suması."
+  },
+  "tags": {
+    "popular": "Popüler",
+    "new": "Yeni",
+    "signature": "İmza",
+    "fast": "Hızlı"
+  },
+  "ui": {
+    "currency": "₺",
+    "person": "Kişi",
+    "bottle": "Şişe",
+    "glass": "Kadeh",
+    "best_value": "AVANTAJLI",
+    "bundle_savings": "Paket Kazancı",
+    "service_note": "Fiyatlarımıza KDV dahildir.",
+    "order_before_17": "17:00 öncesi siparişe uygundur",
+    "closed_after_17": "17:00 sonrası kapalıdır",
+    "order_after_17": "Akşam servisi",
+    "available_after_17": "17:00'den sonra açılacaktır"
+  }
+}
