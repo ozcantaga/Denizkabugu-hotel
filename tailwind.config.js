@@ -1,5 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  content: [
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./app.vue",
+    "./error.vue",
+  ],
   theme: {
     extend: {
       colors: {
@@ -9,7 +17,7 @@ module.exports = {
         'hotel-accent': '#a1b1bc',
       },
       fontFamily: {
-        serif: ['Cormorant Garamond', 'serif'],
+        serif: ['"Cormorant Garamond"', 'serif'],
         sans: ['Montserrat', 'sans-serif'],
       },
       letterSpacing: {
@@ -18,4 +26,5 @@ module.exports = {
       }
     },
   },
+  plugins: [],
 }

@@ -1,0 +1,59 @@
+/* 1. Global Font ve Akıcılık Ayarları */
+html {
+  /* Sayfa geçişlerinde ve yukarı kaydırmada yumuşak hareket */
+  scroll-behavior: smooth;
+  /* Mobil cihazlarda tıklama gecikmesini önler */
+  touch-action: manipulation;
+  /* Fontların daha net ve estetik görünmesini sağlar */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  /* Metin seçildiğinde oluşacak rengi hotel konseptine uydur */
+  @apply bg-hotel-cream text-hotel-dark;
+}
+
+/* 2. Yatay Menü için Kaydırma Çubuğunu Gizle (Class Bazlı) */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari and Opera */
+}
+
+/* 3. Özel Animasyon Tanımları (Rose Uyarı Rozeti İçin) */
+@keyframes soft-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.03);
+    opacity: 0.9;
+  }
+}
+
+.animate-pulse-fast {
+  animation: soft-pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* 4. Resim Yüklenme Efekti */
+img {
+  transition: opacity 0.3s ease-in-out;
+}
+
+img[loading] {
+  opacity: 0;
+}
+
+img.lazyloaded {
+  opacity: 1;
+}
+
+/* 5. Butonlar için Global Tıklama Efekti */
+button:active {
+  transform: scale(0.97);
+  transition: transform 0.1s ease;
+}

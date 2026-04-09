@@ -6,24 +6,24 @@
     "main_courses": "Main Courses",
     "salads": "Salads",
     "snacks": "Quick Bites",
-    "beverages": "Beverages",
     "alcohol": "Alcohol",
-    "desserts": "Desserts"
+    "soft_drinks": "Hot & Cold"
   },
   "subCategories": {
     "classic": "Classic",
     "hots": "Hot Plates",
+    "cold": "Cold Plates",
     "appetizers": "Appetizers",
-    "cocktails": "Cocktails",
     "grill_burger": "Grill & Burgers",
     "pastas": "Pastas",
-    "sides": "Sides",
-    "salads": "Salads",
-    "cold_drinks": "Cold Drinks",
-    "hot_drinks": "Hot Drinks",
     "beers": "Beers",
     "whiskey": "Whiskey",
-    "raki": "Raki"
+    "raki": "Raki",
+    "cold_beverages": "Cold Beverages",
+    "hot_beverages": "Hot Beverages",
+    "salads":"Salads",
+    "sides": "Side Dishes"
+    
   },
   "breakfast": {
     "serpme_name": "Full Spread Breakfast",
@@ -35,35 +35,35 @@
   },
   "snacks": {
     "burger_name": "Classic Burger",
-    "burger_desc": "180g beef patty, caramelized onions, special sauce and fries.",
+    "burger_desc": "180g beef patty, caramelized onions and crispy fries.",
     "manti_name": "Homemade Manti",
     "manti_desc": "Hand-rolled Turkish dumplings with yogurt and burnt butter.",
     "taco_name": "Street Tacos",
     "taco_desc": "Slow-cooked beef rib, cilantro, lime and pico de gallo.",
     "mini_burger_name": "Mini Burger Trio",
-    "mini_burger_desc": "A trio of mini sliders featuring house-made sauces, caramelized onions, and melted cheddar cheese."
+    "mini_burger_desc": "House-made sauces and melted cheddar cheese sliders."
   },
   "salads": {
     "greek_name": "Greek Salad",
-    "greek_desc": "Fresh tomatoes, cucumbers, feta cheese, olives, and red onions with oregano.",
+    "greek_desc": "Tomatoes, cucumbers, feta cheese, olives, and red onions.",
     "coban_name": "Shepherd's Salad",
-    "coban_desc": "Finely chopped tomatoes, cucumbers, peppers, and onions with lemon dressing.",
+    "coban_desc": "Finely chopped garden vegetables with lemon dressing.",
     "special_name": "Deniz Kabuğu Special",
-    "special_desc": "Seasonal greens, walnuts, pomegranate seeds, and our chef's special vinaigrette."
+    "special_desc": "Seasonal greens, walnuts, pomegranate, and chef's vinaigrette."
   },
   "main": {
     "bolonez_name": "Spaghetti Bolognese",
-    "bolonez_desc": "Traditional Italian meat sauce with parmesan.",
+    "bolonez_desc": "Traditional Italian meat sauce with aged parmesan.",
     "kofte_name": "Butcher's Meatballs",
     "kofte_desc": "Grilled spiced meatballs with rice and roasted peppers.",
-    "fries_name": "French Fries",
-    "fries_desc": "Crispy fries with truffle mayo.",
     "arrabiata_name": "Penne Arrabiata",
-    "arrabiata_desc": "Spicy tomato sauce with garlic, dried chili peppers, and fresh parsley cooked in olive oil.",
+    "arrabiata_desc": "Spicy tomato sauce with garlic and fresh parsley.",
     "pesto_name": "Penne Pesto Basilico",
-    "pesto_desc": "Fresh basil, pine nuts, garlic, and parmesan cheese blended with extra virgin olive oil.",
+    "pesto_desc": "Fresh basil, pine nuts, and parmesan blended with olive oil.",
     "chef_burger_name": "Chef's Signature Burger",
-    "chef_burger_desc": "180g juicy beef patty, caramelized onions, melted cheddar cheese, and our chef's signature secret sauce."
+    "chef_burger_desc": "180g juicy beef patty with our chef's secret sauce.",
+     "fries_name": "French Fries", 
+    "fries_desc": "Crispy golden fries served with truffle mayo."
   },
   "alcohol": {
     "carlsberg": "Carlsberg 33cl",
@@ -72,32 +72,46 @@
     "jack_daniels": "Jack Daniels",
     "chivas": "Chivas Regal 12 Y.O",
     "jameson": "Jameson Irish",
-    "raki_70": "Yeni Rakı (Yeni Seri) 70cl",
-    "raki_35": "Yeni Rakı (Yeni Seri) 35cl",
+    "raki_70": "Yeni Rakı 70cl",
+    "raki_35": "Yeni Rakı 35cl",
     "raki_gobek": "Beylerbeyi Göbek 70cl",
     "jd_desc": "Tennessee whiskey with caramel and oak notes.",
     "chivas_desc": "Premium blended Scotch whiskey.",
-    "jameson_desc": "Triple distilled, smooth Irish whiskey.",
     "raki_std_desc": "Pure anise flavor with a smooth finish.",
-    "raki_prem_desc": "Triple distilled, 100% fresh grape spirit."
+    "raki_prem_desc": "Triple distilled, 100% fresh grape spirit.",
+    "jameson_desc": "Triple distilled, smooth and balanced Irish whiskey."
+  },
+  "hot": {
+    "turkish_coffee": "Turkish Coffee",
+    "mastic_coffee": "Mastic Turkish Coffee",
+    "filter_coffee": "Filter Coffee",
+    "espresso": "Espresso",
+    "americano": "Americano",
+    "latte": "Latte"
+  },
+  "soft": {
+    "water": "Water",
+    "soda": "Mineral Water",
+    "cola": "Cola",
+    "ice_tea": "Lipton Ice Tea"
   },
   "tags": {
     "popular": "Popular",
     "new": "New",
-    "signature": "Signature",
-    "fast": "Quick"
+    "signature": "Signature"
   },
   "ui": {
     "currency": "₺",
-    "person": "Guest",
     "bottle": "Bottle",
     "glass": "Glass",
-    "best_value": "BEST VALUE",
-    "bundle_savings": "Bundle Savings",
     "service_note": "VAT is included in our prices.",
     "order_before_17": "Available before 17:00",
     "closed_after_17": "Closed after 17:00",
     "order_after_17": "Evening service",
-    "available_after_17": "Available after 17:00"
+    "available_after_17": "Available after 17:00",
+  
+  "closed": "Not Available",
+  "available": "Available Now",
+  "order_for_tomorrow": "Pre-order for Tomorrow"
   }
 }

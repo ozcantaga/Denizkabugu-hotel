@@ -5,25 +5,24 @@
     "breakfast": "Kahvaltı",
     "main_courses": "Ana Yemekler",
     "salads": "Salatalar",
-    "snacks": "Hızlı Lezzetler",
-    "beverages": "İçecekler",
+    "snacks": "Atıştırmalıklar",
     "alcohol": "Alkol",
-    "desserts": "Tatlılar"
+    "soft_drinks": "Sıcak & Soğuk"
   },
   "subCategories": {
     "classic": "Klasik",
     "hots": "Sıcaklar",
+    "cold": "Soğuklar",
     "appetizers": "Başlangıçlar",
-    "cocktails": "Kokteyller",
     "grill_burger": "Izgara & Burger",
     "pastas": "Makarnalar",
-    "sides": "Yan Lezzetler",
-    "salads": "Salatalar",
-    "cold_drinks": "Soğuklar",
-    "hot_drinks": "Sıcaklar",
     "beers": "Bira",
     "whiskey": "Viski",
-    "raki": "Rakı"
+    "raki": "Rakı",
+    "cold_beverages": "Soğuk İçecekler",
+    "hot_beverages": "Sıcak İçecekler",
+    "salads":"Salatalar",
+    "sides":"Yan Lezzetler"
   },
   "breakfast": {
     "serpme_name": "Serpme Kahvaltı",
@@ -35,35 +34,35 @@
   },
   "snacks": {
     "burger_name": "Klasik Burger",
-    "burger_desc": "180gr dana köfte, karamelize soğan, özel sos ve patates kızartması.",
+    "burger_desc": "180gr dana köfte, karamelize soğan ve patates kızartması.",
     "manti_name": "Ev Mantısı",
     "manti_desc": "Yoğurt ve yanık tereyağı ile el açması geleneksel mantı.",
     "taco_name": "Sokak Tacoları",
-    "taco_desc": "Ağır ateşte pişmiş dana kaburga, kişniş, lime ve pico de gallo.",
+    "taco_desc": "Ağır ateşte pişmiş dana kaburga ve pico de gallo.",
     "mini_burger_name": "Mini Burger Üçlüsü",
-    "mini_burger_desc": "Ev yapımı soslar, karamelize soğan ve cheddar peyniri ile hazırlanan 3'lü burger seti."
+    "mini_burger_desc": "Ev yapımı soslar ve cheddar peyniri ile 3'lü set."
   },
   "salads": {
     "greek_name": "Yunan Salatası",
-    "greek_desc": "Domates, salatalık, beyaz peynir, zeytin ve kekikli kırmızı soğan.",
+    "greek_desc": "Domates, salatalık, beyaz peynir, zeytin ve kekik.",
     "coban_name": "Çoban Salatası",
-    "coban_desc": "İnce kıyılmış domates, salatalık, biber ve soğanlı limon soslu salata.",
+    "coban_desc": "İnce kıyılmış domates, salatalık ve limon sosu.",
     "special_name": "Deniz Kabuğu Special",
     "special_desc": "Mevsim yeşillikleri, ceviz, nar ekşisi ve şefin özel sosu."
   },
   "main": {
     "bolonez_name": "Spagetti Bolonez",
-    "bolonez_desc": "Parmesan peyniri eşliğinde geleneksel İtalyan kıymalı sos.",
+    "bolonez_desc": "Parmesan peyniri eşliğinde geleneksel kıymalı sos.",
     "kofte_name": "Kasap Köfte",
-    "kofte_desc": "Izgara baharatlı köfte, pilav ve közlenmiş biber ile.",
-    "fries_name": "Patates Kızartması",
-    "fries_desc": "Çıtır patates, trüflü mayonez ile.",
+    "kofte_desc": "Izgara baharatlı köfte, pilav ve közlenmiş biber.",
     "arrabiata_name": "Penne Arrabiata",
-    "arrabiata_desc": "Sarımsak, acı pul biber ve taze maydanozlu acılı domates sosu.",
+    "arrabiata_desc": "Sarımsak, acı pul biber ve acılı domates sosu.",
     "pesto_name": "Pesto Soslu Makarna",
-    "pesto_desc": "Taze fesleğen, çam fıstığı, sarımsak ve parmesanlı zeytinyağlı sos.",
+    "pesto_desc": "Taze fesleğen, çam fıstığı ve parmesanlı sos.",
     "chef_burger_name": "Şefin İmza Burgeri",
-    "chef_burger_desc": "180gr sulu dana köfte, karamelize soğan, cheddar ve şefin gizli sosu."
+    "chef_burger_desc": "180gr sulu dana köfte ve şefin gizli sosu.",
+   "fries_name": "Patates Kızartması",
+    "fries_desc": "Çıtır patates, trüflü mayonez ile."
   },
   "alcohol": {
     "carlsberg": "Carlsberg 33cl",
@@ -72,32 +71,46 @@
     "jack_daniels": "Jack Daniels",
     "chivas": "Chivas Regal 12 Y.O",
     "jameson": "Jameson Irish",
-    "raki_70": "Yeni Rakı (Yeni Seri) 70cl",
-    "raki_35": "Yeni Rakı (Yeni Seri) 35cl",
+    "raki_70": "Yeni Rakı 70cl",
+    "raki_35": "Yeni Rakı 35cl",
     "raki_gobek": "Beylerbeyi Göbek 70cl",
     "jd_desc": "Karamel ve meşe notalı Tennessee viskisi.",
     "chivas_desc": "Premium harmanlanmış İskoç viskisi.",
-    "jameson_desc": "Üç kez damıtılmış, yumuşak içimli İrlanda viskisi.",
     "raki_std_desc": "Yumuşak bitişli, saf anason aroması.",
-    "raki_prem_desc": "3 kez distile edilmiş, %100 yaş üzüm suması."
+    "raki_prem_desc": "3 kez distile edilmiş, %100 yaş üzüm suması.",
+    "jameson_desc": "Triple distilled, smooth and balanced Irish whiskey with floral and spicy notes."
+  },
+  "hot": {
+    "turkish_coffee": "Türk Kahvesi",
+    "mastic_coffee": "Damla Sakızlı Türk Kahvesi",
+    "filter_coffee": "Filtre Kahve",
+    "espresso": "Espresso",
+    "americano": "Americano",
+    "latte": "Latte"
+  },
+  "soft": {
+    "water": "Su",
+    "soda": "Sade Soda",
+    "cola": "Cola",
+    "ice_tea": "Lipton Ice Tea"
   },
   "tags": {
     "popular": "Popüler",
     "new": "Yeni",
-    "signature": "İmza",
-    "fast": "Hızlı"
+    "signature": "İmza"
   },
   "ui": {
     "currency": "₺",
-    "person": "Kişi",
     "bottle": "Şişe",
     "glass": "Kadeh",
-    "best_value": "AVANTAJLI",
-    "bundle_savings": "Paket Kazancı",
     "service_note": "Fiyatlarımıza KDV dahildir.",
     "order_before_17": "17:00 öncesi siparişe uygundur",
     "closed_after_17": "17:00 sonrası kapalıdır",
     "order_after_17": "Akşam servisi",
-    "available_after_17": "17:00'den sonra açılacaktır"
+    "available_after_17": "17:00'den sonra açılacaktır",
+   
+  "closed": "Servis Dışı",
+  "available": "Hemen Sipariş Verilebilir",
+  "order_for_tomorrow": "Yarın İçin Ön Sipariş Alınır"
   }
 }

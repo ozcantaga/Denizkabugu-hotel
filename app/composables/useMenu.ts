@@ -37,17 +37,38 @@ export const useMenu = () => {
       icon: 'Utensils',
       subs: {
         "pastas": [
-          { id: 'm1', name: "main.bolonez_name", ingredients: "main.bolonez_desc", price: 580, availability: 'before_17', icon: 'Soup' },
-          { id: 'm5', name: "main.arrabiata_name", ingredients: "main.arrabiata_desc", price: 540, icon: 'Soup' },
-          { id: 'm6', name: "main.pesto_name", ingredients: "main.pesto_desc", price: 560, icon: 'Soup' }
+          { id: 'm1', name: "main.bolonez_name", availability: 'after_17', ingredients: "main.bolonez_desc", price: 580, icon: 'Soup' },
+          { id: 'm5', name: "main.arrabiata_name",availability: 'after_17', ingredients: "main.arrabiata_desc", price: 540, icon: 'Soup' },
+          { id: 'm6', name: "main.pesto_name",availability: 'after_17', ingredients: "main.pesto_desc", price: 560, icon: 'Soup' }
         ],
         "grill_burger": [
           { id: 'm3', name: "main.kofte_name", ingredients: "main.kofte_desc", price: 650, tag: "signature", availability: 'after_17', icon: 'Beef' },
           { id: 'm4', name: "main.chef_burger_name", ingredients: "main.chef_burger_desc", price: 600, availability: 'after_17', icon: 'Pizza' }
         ],
         "sides": [
-          { id: 'm7', name: "main.fries_name", ingredients: "main.fries_desc", price: 280, icon: 'Beef' }
+          { id: 'm7', name: "main.fries_name",availability: 'after_17', ingredients: "main.fries_desc", price: 280, icon: 'Beef' }
         ]
+      }
+    },
+    "Soft Drinks": {
+      translationKey: "soft_drinks",
+      image: "/images/soft-drinks/soft.jpg",
+      icon: 'GlassWater',
+      subs: {
+        "cold_beverages": [
+          { id: 'sd1', name: "soft.water", price: 65, icon: 'Droplets' },
+          { id: 'sd2', name: "soft.soda", price: 85, icon: 'Sparkles' },
+          { id: 'sd3', name: "soft.cola", price: 150, icon: 'GlassWater' },
+          { id: 'sd4', name: "soft.ice_tea", price: 150, icon: 'IceTea' }
+        ],
+        "hot_beverages": [
+  { id: 'h1', name: "hot.turkish_coffee", price: 150, icon: 'Coffee' },
+  { id: 'h2', name: "hot.mastic_coffee", price: 150, icon: 'Coffee' },
+  { id: 'h3', name: "hot.filter_coffee", price: 200, icon: 'Coffee' },
+  { id: 'h4', name: "hot.espresso", price: 200, icon: 'Bean' },
+  { id: 'h5', name: "hot.americano", price: 200, icon: 'Coffee' },
+  { id: 'h6', name: "hot.latte", price: 200, icon: 'CupSoda' }
+]
       }
     },
     "Alkol": {
@@ -74,31 +95,13 @@ export const useMenu = () => {
     }
   };
 
+  // State yönetimi (Sadece aktif kategoriler kaldı)
   const currentMainCat = useState<string>('currentMainCat', () => "Kahvaltı");
   const currentSubCat = useState<string>('currentSubCat', () => "classic");
-  const itemCounts = useState<Record<string, number>>('itemCounts', () => ({}));
-  const progressiveRate = 0.50;
-
-  const updateCount = (id: string, amount: number) => {
-    const current = itemCounts.value[id] || 1;
-    if (current + amount >= 1) {
-      itemCounts.value[id] = current + amount;
-    }
-  };
-
-  const getProgressivePrice = (basePrice: number, count: number) => {
-    if (count <= 1) return basePrice;
-    const total = basePrice + (basePrice * progressiveRate * (count - 1));
-    return Math.round(total);
-  };
 
   return { 
     menuData, 
     currentMainCat, 
-    currentSubCat, 
-    itemCounts, 
-    updateCount, 
-    progressiveRate,
-    getProgressivePrice 
+    currentSubCat
   };
 }

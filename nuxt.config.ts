@@ -1,6 +1,6 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  compatibilityDate: '2026-04-09',
+  devtools: { enabled: false },
 
   modules: [
     '@nuxt/image',
@@ -9,49 +9,53 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
   ],
 
-  // --- NUXT IMAGE AYARLARI ---
-  // Resimlerin farklı ekran boyutlarına göre otomatik optimize edilmesi için
-  image: {
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
+    head: {
+      title: 'Deniz Kabuğu Hotel | Dijital Menü',
+      viewport: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0',
+      meta: [
+        { name: 'theme-color', content: '#fdfcf8' }
+      ],
+      link: [
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+        { 
+          rel: 'stylesheet', 
+          href: 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;600;700&display=swap' 
+        }
+      ]
+    }
+  },
+ css: ['~/assets/css/main.css'],
+image: {
+    provider: 'vercel',
     screens: {
       xs: 320,
-      sm: 640,
+      sm: 480,
       md: 768,
-      lg: 1024,
-      xl: 1280,
+      // Uyarı veren değerleri buraya ekliyoruz
+      logo: 100,      // index.vue'daki width="100" için
+      logo2x: 200,    // Retina/Yüksek çözünürlük için (width x 2)
+      old_logo: 128,  // Eğer başka yerde 128 kaldıysa hata vermemesi için dursun
     },
-    domains: ['images.unsplash.com'], // Eğer dış kaynaklı resim kullanacaksan buraya eklemelisin
-    format: ['webp', 'avif', 'jpeg'], // En hızlı formatları önceliklendirir
+    format: ['webp', 'avif'],
+    quality: 80,
   },
 
-  // --- I18N (DİL) AYARLARI ---
-i18n: {
-  
-  langDir: 'locales/', // 'i18n/locales' değil, sadece 'locales/' yap
-  strategy: 'prefix_except_default',
-  defaultLocale: 'tr',
-  locales: [
-    { code: 'tr', iso: 'tr-TR', file: 'tr.json', name: 'Türkçe' },
-    { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' }
-  ],
-  // ... diğer ayarlar
-},
-
-  // --- TAILWIND CSS AYARLARI ---
-  tailwindcss: {
-    exposeConfig: true,
-    viewer: true,
-  },
-
-  // --- GLOBAL CSS & FONTS ---
-  app: {
-    head: {
-      title: 'Deniz Kabuğu Hotel | Gastronomi',
-      htmlAttrs: { lang: 'tr' },
-      meta: [
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' },
-        { name: 'theme-color', content: '#c2d9e7' }
-      ],
+  vite: {
+    optimizeDeps: {
+      include: ['lucide-vue-next']
     }
+  },
+
+  i18n: {
+    langDir: 'locales/',
+    strategy: 'no_prefix',
+    defaultLocale: 'tr',
+    locales: [
+      { code: 'tr', iso: 'tr-TR', file: 'tr.json', name: 'Türkçe' },
+      { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' }
+    ]
   }
 })
