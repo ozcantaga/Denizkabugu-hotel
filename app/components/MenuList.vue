@@ -58,7 +58,7 @@ const safeT = (key: string | undefined) => {
           </span>
         </div>
         
-        <p v-if="item.ingredients" class="font-serif italic text-[13px] text-gray-500/90 leading-relaxed pl-7 max-w-xl group-hover:text-hotel-dark transition-colors">
+        <p v-if="item.ingredients" class="font-serif italic text-[17px] text-gray-900  leading-relaxed pl-7 max-w-xl group-hover:text-hotel-dark transition-colors">
           {{ safeT(item.ingredients) }}
         </p>
 
