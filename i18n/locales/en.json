@@ -113,5 +113,11 @@
   "closed": "Not Available",
   "available": "Available Now",
   "order_for_tomorrow": "Pre-order for Tomorrow"
+  },
+  "footer": {
+    "address_title": "Address",
+    "contact_title": "Contact Information",
+    "whatsapp_btn": "WhatsApp",
+    "call_btn": "Call Now"
   }
 }

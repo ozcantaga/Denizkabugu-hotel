@@ -1,58 +1,50 @@
 /* 1. Global Font ve Akıcılık Ayarları */
 html {
-  /* Sayfa geçişlerinde ve yukarı kaydırmada yumuşak hareket */
   scroll-behavior: smooth;
-  /* Mobil cihazlarda tıklama gecikmesini önler */
   touch-action: manipulation;
-  /* Fontların daha net ve estetik görünmesini sağlar */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  /* Metin seçildiğinde oluşacak rengi hotel konseptine uydur */
+  /* Arka planı sabit tutalım ama seçilen metin rengini belirginleştirelim */
   @apply bg-hotel-cream text-hotel-dark;
 }
 
-/* 2. Yatay Menü için Kaydırma Çubuğunu Gizle (Class Bazlı) */
+/* 2. Yatay Menü için Kaydırma Çubuğunu Gizle */
 .no-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;     /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 .no-scrollbar::-webkit-scrollbar {
-  display: none;             /* Chrome, Safari and Opera */
+  display: none;
 }
 
-/* 3. Özel Animasyon Tanımları (Rose Uyarı Rozeti İçin) */
+/* 3. Özel Animasyon Tanımları */
 @keyframes soft-pulse {
-  0%, 100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.03);
-    opacity: 0.9;
-  }
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.03); opacity: 0.9; }
 }
 
 .animate-pulse-fast {
   animation: soft-pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-/* 4. Resim Yüklenme Efekti */
+/* 4. Resim Yüklenme Efekti - DÜZELTİLDİ */
+/* img[loading] { opacity: 0; }  <-- Bu satırı sildik veya yorum satırı yaptık çünkü logoyu gizliyor */
+
 img {
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
-img[loading] {
-  opacity: 0;
+/* 5. Logo Görünürlük Desteği - YENİ EKLENDİ */
+.logo-visible {
+  /* Siyah yazılara dokunmadan, açık mavi deniz kabuğunu belirginleştirir */
+  filter: brightness(0.95) contrast(1.1);
+  /* Eğer hala görünmüyorsa filtreyi 'brightness(0)' yaparak logoyu tamamen siyah yapabilirsin */
 }
 
-img.lazyloaded {
-  opacity: 1;
-}
-
-/* 5. Butonlar için Global Tıklama Efekti */
+/* 6. Butonlar için Global Tıklama Efekti */
 button:active {
   transform: scale(0.97);
   transition: transform 0.1s ease;

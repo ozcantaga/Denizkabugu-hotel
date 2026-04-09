@@ -15,6 +15,7 @@ module.exports = {
         'hotel-cream': '#fdfcf8',
         'hotel-dark': '#2c3e50',
         'hotel-accent': '#a1b1bc',
+        'hotel-blue': '#ADD8E6', // Logonuzdaki o tatlı açık mavi tonu
       },
       fontFamily: {
         serif: ['"Cormorant Garamond"', 'serif'],

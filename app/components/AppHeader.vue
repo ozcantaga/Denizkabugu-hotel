@@ -1,6 +1,6 @@
 <template>
   <header class="relative pt-16 pb-10 px-6 flex flex-col items-center border-b border-hotel-accent/10 overflow-hidden bg-hotel-cream">
-    <div class="absolute -top-24 w-64 h-64 bg-hotel-blue/20 blur-[100px] -z-10 rounded-full"></div>
+    <div class="absolute -top-32 w-64 h-64 bg-hotel-blue/10 blur-[80px] -z-10 rounded-full"></div>
 
     <div class="absolute top-4 right-4 flex gap-3 z-20">
       <button v-for="l in locales" :key="l.code" @click="setLocale(l.code)"
@@ -11,12 +11,13 @@
     </div>
 
     <div class="mb-8 relative group cursor-pointer">
-      <div class="w-28 h-28 md:w-32 md:h-32 flex items-center justify-center p-2 transition-transform duration-1000 group-hover:scale-105">
+      <div class="w-32 h-32 flex items-center justify-center p-3 transition-transform duration-1000 group-hover:scale-105 bg-white/30 rounded-full backdrop-blur-[1px]">
         <NuxtImg 
           src="/logo/denizkabugulogoson.svg" 
-          width="128"
-          height="128"
-          class="w-full h-full object-contain drop-shadow-sm" 
+          :width="160"
+          :height="160"
+          sizes="160px"
+          class="w-full h-full object-contain logo-filter" 
           alt="Deniz Kabuğu Logo" 
           loading="eager"
         />
@@ -47,6 +48,11 @@ const { locale, locales, setLocale } = useI18n();
 </script>
 
 <style scoped>
+/* Logonun içindeki renkleri krem zeminde belirginleştiren filtre */
+.logo-filter {
+  filter: brightness(0.9) contrast(1.1);
+}
+
 header {
   animation: fadeInDown 0.8s ease-out;
 }

@@ -29,15 +29,13 @@ export default defineNuxtConfig({
   },
  css: ['~/assets/css/main.css'],
 image: {
-    provider: 'vercel',
-    screens: {
-      xs: 320,
-      sm: 480,
-      md: 768,
-      // Uyarı veren değerleri buraya ekliyoruz
-      logo: 100,      // index.vue'daki width="100" için
-      logo2x: 200,    // Retina/Yüksek çözünürlük için (width x 2)
-      old_logo: 128,  // Eğer başka yerde 128 kaldıysa hata vermemesi için dursun
+   
+   screens: {
+      xs: 150,
+      sm: 300,  // Uyarıda geçen (300) boyutu buraya eklendi
+      md: 320,
+      lg: 640,
+      xl: 768
     },
     format: ['webp', 'avif'],
     quality: 80,

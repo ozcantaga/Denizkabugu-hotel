@@ -112,5 +112,11 @@
   "closed": "Servis Dışı",
   "available": "Hemen Sipariş Verilebilir",
   "order_for_tomorrow": "Yarın İçin Ön Sipariş Alınır"
+  },
+  "footer": {
+    "address_title": "Adres",
+    "contact_title": "İletişim Bilgileri",
+    "whatsapp_btn": "WhatsApp",
+    "call_btn": "Hemen Ara"
   }
 }

@@ -10,12 +10,13 @@
         </button>
       </div>
 
-      <div class="mb-4">
+      <div class="mb-4 p-4 rounded-full bg-white/40 backdrop-blur-[2px] shadow-sm flex items-center justify-center">
         <NuxtImg 
           src="/logo/denizkabugulogoson.svg" 
-          width="100" 
-          height="100" 
-          class="object-contain" 
+          :width="160"
+          :height="160"
+          sizes="160px"
+          class="object-contain logo-enhance w-[150px] h-auto" 
           loading="eager"
           alt="Deniz Kabuğu Hotel"
         />
@@ -48,7 +49,7 @@
       </div>
     </div>
 
-    <main class="max-w-2xl mx-auto px-6 pt-8">
+    <main class="max-w-2xl mx-auto px-6 pt-8 min-h-[400px]">
       <div class="h-44 rounded-[2rem] overflow-hidden shadow-xl mb-10 border-4 border-white relative bg-gray-50">
         <Transition name="scale" mode="out-in">
           <NuxtImg 
@@ -70,18 +71,57 @@
       </Transition>
     </main>
 
-    <footer class="mt-20 pb-12 text-center">
-      <div class="flex flex-col items-center mb-8">
-        <div class="w-8 h-[1px] bg-hotel-accent/30 mb-6"></div>
-        <h2 class="font-serif italic text-2xl text-hotel-dark tracking-hotel uppercase font-bold">
-          {{ $t('hotelName') }}
-        </h2>
+    <footer class="mt-20 w-full bg-white border-t border-hotel-accent/20 relative z-10">
+      <div class="bg-hotel-cream py-8 border-b border-hotel-accent/10">
+        <div class="max-w-2xl mx-auto px-6 flex flex-wrap justify-center gap-4">
+          <a href="https://wa.me/905333018323" target="_blank" 
+             class="flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-full text-[11px] font-bold uppercase tracking-widest shadow-md hover:scale-105 transition-all">
+             <LucideMessageCircle :size="14" /> {{ $t('footer.whatsapp_btn') }}
+          </a>
+          <a href="tel:+902327168090" 
+             class="flex items-center gap-2 px-6 py-3 bg-hotel-dark text-white rounded-full text-[11px] font-bold uppercase tracking-widest shadow-md hover:scale-105 transition-all">
+             <LucidePhone :size="14" /> {{ $t('footer.call_btn') }}
+          </a>
+        </div>
       </div>
-      
-      <div class="border-t border-hotel-accent/5 pt-12">
-        <p class="text-[9px] text-hotel-accent uppercase tracking-widest px-8 font-light italic leading-relaxed">
-          {{ $t('ui.service_note') }}
-        </p>
+
+      <div class="max-w-2xl mx-auto px-8 py-16">
+        <div class="flex flex-col md:flex-row justify-between gap-12">
+          
+          <div class="flex-1 space-y-4 text-center md:text-left">
+            <h3 class="font-serif italic text-2xl text-hotel-dark font-bold uppercase tracking-tight">
+              {{ $t('hotelName') }}
+            </h3>
+            <div class="flex items-start justify-center md:justify-start gap-3 text-[12px] text-hotel-accent leading-relaxed">
+              <LucideMapPin :size="16" class="shrink-0 text-hotel-blue mt-1" />
+              <p>Alaçatı Mah, 12080 Sok No:6,<br />35930 Çeşme/İzmir, Türkiye</p>
+            </div>
+          </div>
+
+          <div class="flex-1 space-y-6 text-center md:text-left">
+            <h4 class="text-[10px] uppercase tracking-[0.3em] text-hotel-dark font-black">
+              {{ $t('footer.contact_title') }}
+            </h4>
+            <div class="flex flex-col gap-4 text-[13px] text-hotel-accent font-medium">
+              <a href="tel:+902327168090" class="hover:text-hotel-blue transition-colors flex items-center justify-center md:justify-start gap-3">
+                <LucidePhoneCall :size="14" /> +90 232 716 80 90
+              </a>
+              <a href="tel:+905333018323" class="hover:text-hotel-blue transition-colors flex items-center justify-center md:justify-start gap-3">
+                <LucideSmartphone :size="14" /> +90 533 301 83 23
+              </a>
+              <a href="mailto:info@denizkabuguhotel.com" class="hover:text-hotel-blue transition-colors flex items-center justify-center md:justify-start gap-3">
+                <LucideMail :size="14" /> info@denizkabuguhotel.com
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-16 pt-8 border-t border-hotel-accent/10 text-center">
+          <p class="text-[9px] text-hotel-accent/40 uppercase tracking-[0.2em]">
+            © {{ new Date().getFullYear() }} {{ $t('hotelName') }} Alaçatı
+          </p>
+        </div>
       </div>
     </footer>
   </div>
@@ -89,6 +129,14 @@
 
 <script setup lang="ts">
 import * as LucideIcons from 'lucide-vue-next';
+import { 
+  MessageCircle as LucideMessageCircle, 
+  Phone as LucidePhone, 
+  MapPin as LucideMapPin, 
+  Mail as LucideMail,
+  PhoneCall as LucidePhoneCall,
+  Smartphone as LucideSmartphone
+} from 'lucide-vue-next';
 
 const { menuData, currentMainCat, currentSubCat } = useMenu();
 const { locale, locales, setLocale } = useI18n();
@@ -112,6 +160,7 @@ const changeCategory = (name: string) => {
 </script>
 
 <style scoped>
+.logo-enhance { filter: contrast(1.1) brightness(0.9); }
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
