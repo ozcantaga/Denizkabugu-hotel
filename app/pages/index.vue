@@ -12,7 +12,7 @@
 
       <div class="mb-4 p-4 rounded-full bg-white/40 backdrop-blur-[2px] shadow-sm flex items-center justify-center">
         <NuxtImg 
-          src="/denizkabugulogoson.svg" 
+          src="/logo.svg" 
           :width="160"
           :height="160"
           class="object-contain logo-enhance w-[150px] h-auto" 

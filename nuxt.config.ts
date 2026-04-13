@@ -18,6 +18,7 @@ export default defineNuxtConfig({
         { name: 'theme-color', content: '#fdfcf8' }
       ],
       link: [
+        {rel: 'icon', type:'image/svg+xml', href: '/logo.svg'},
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         { 
@@ -26,7 +27,8 @@ export default defineNuxtConfig({
         },{ 
           rel: 'stylesheet', 
           href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200' 
-        }
+        },
+        
       ]
     }
   },
