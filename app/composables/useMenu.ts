@@ -129,7 +129,11 @@ export const useMenu = () => {
           image: "/images/wine/wine.webp",
           position: 'center',
           items: [
-            { id: 'w1', name: "alcohol.suvla_glass", price: 390, icon: "wine_bar" }
+            { id: 'w1', name: "alcohol.red", price: 390, icon: "wine_bar" },
+             { id: 'w2', name: "alcohol.red_2", price: 390, icon: "wine_bar" },
+              { id: 'w3', name: "alcohol.white", price: 390, icon: "wine_bar" },
+               { id: 'w4', name: "alcohol.white-2", price: 390, icon: "wine_bar" },
+                { id: 'w5', name: "alcohol.ros", price: 390, icon: "wine_bar" }
           ]
         },
         "spirits": {

@@ -74,6 +74,11 @@
 "akdeniz_pizza_desc": "Domates sos, beyaz peynir, zeytin ve kekik ile hazırlanan Akdeniz usulü pizza."
   },
   "alcohol": {
+    "red": "Kumkale Öküzgözü",
+    "red_2": "Kumkale Karasakız",
+    "white": "Kumkale Narince Emir",
+    "white-2": "Kumkale Kınalı Yapıncak",
+    "ros": "Kabatepe Blush",
     "carlsberg": "Carlsberg",
     "tuborg": "Tuborg",
     "miller": "Miller",

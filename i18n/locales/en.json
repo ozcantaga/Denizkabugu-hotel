@@ -74,6 +74,11 @@
 "akdeniz_pizza_desc": "Mediterranean style pizza with tomato sauce, white cheese, olives and oregano."
   },
   "alcohol": {
+    "red": "Kumkale Okuzgozu (Red)",
+    "red_2": "Kumkale Karasakiz (Red)",
+    "white": "Kumkale Narince Emir (White)",
+    "white-2": "Kumkale Kinali Yapincak (White)",
+    "ros": "Kabatepe Blush (Rosé)",
     "carlsberg": "Carlsberg",
     "tuborg": "Tuborg",
     "miller": "Miller",
