@@ -4,15 +4,15 @@
   "categories": {
     "breakfast": "Kahvaltı",
     "main_courses": "Ana Yemekler",
-    "snacks": "Hızlı Lezzetler",
+    "snacks": "Atıştırmalıklar",
     "alcohol": "Alkol",
-    "soft_drinks": "Soft Drinks"
+    "soft_drinks": "Soft İçecekler"
   },
   "subCategories": {
     "classic": "Klasik",
     "hots": "Sıcaklar",
     "salads": "Salatalar",
-    "grill_burger": "Izgara & Burgerler",
+    "grill_burger": "Köfte & Mantı",
     "pastas": "Makarnalar",
     "pizzas": "Pizzalar",
     "cold_beverages": "Soğuk İçecekler",
@@ -36,7 +36,7 @@
   "snacks": {
     "mini_burger_name": "Mini Burger Üçlüsü",
     "mini_burger_desc": "Yumuşak ekmekler arasında servis edilen üç mini burger, yanında çıtır patates ile.",
-    "taco_name": "Taco Üçlüsü",
+    "taco_name": "Üçlüsü",
     "taco_desc": "Özel baharatlarla hazırlanmış kıyma, mısır ve taze domates ile servis edilir.",
     "mozzarella_name": "Çıtır Mozzarella Stick",
     "mozzarella_desc": "Pankolu mozzarella çubukları, özel domates sos ile.",
@@ -79,9 +79,9 @@
     "white": "Kumkale Narince Emir",
     "white-2": "Kumkale Kınalı Yapıncak",
     "ros": "Kabatepe Blush",
-    "carlsberg": "Carlsberg",
-    "tuborg": "Tuborg",
-    "miller": "Miller",
+   "carlsberg": "Carlsberg (33 cl)",
+  "tuborg": "Tuborg (50 cl)",
+  "miller": "Miller (33 cl)",
     "suvla_glass": "Suvla Kadeh (Kırmızı / Beyaz)",
     "whisky_gin": "Viski / Gin Tonic",
     "raki_70": "Rakı (70 cl)",
@@ -97,10 +97,11 @@
     "latte": "Latte"
   },
   "soft": {
-    "water": "Su",
+    "water_k": "Küçük Su (0,33 l)",
+    "water_b": "Büyük Su (0,75 l)",
     "soda": "Soda",
     "cola": "Cola",
-    "ice_tea": "Ice Tea"
+    "ice_tea": "Lipton Ice Tea"
   },
   "beverages": {
     "lemonade": "Ev Yapımı Limonata",

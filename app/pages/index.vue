@@ -52,21 +52,20 @@
 
     <main class="max-w-2xl mx-auto px-6 pt-8 min-h-[400px]">
       
-      <div class="aspect-video w-full rounded-[2rem] overflow-hidden shadow-xl mb-10 border-4 border-white relative bg-gray-50">
-        <Transition name="scale" mode="out-in">
-          <NuxtImg 
-            :key="activeDisplayImage" 
-            :src="activeDisplayImage" 
-            :width="800" 
-            :height="450" 
-            class="w-full h-full object-cover transition-all duration-500"
-            :class="imageClass"
-            format="webp"
-            quality="85"
-            alt="Menu Image"
-          />
-        </Transition>
-      </div>
+     <div class="aspect-video w-full rounded-[2rem] overflow-hidden shadow-xl mb-10 border-4 border-white relative bg-hotel-cream-dark/20">
+  <Transition name="scale" mode="out-in">
+    <NuxtImg 
+      :key="activeDisplayImage" 
+      :src="activeDisplayImage"
+      sizes="sm:100vw md:800px"
+      class="w-full h-full object-cover transition-all duration-500 top" 
+      :class="imageClass"
+      format="webp"
+      quality="90"
+      alt="Menu Item Image" 
+    />
+  </Transition>
+</div>
 
       <Transition name="fade" mode="out-in">
         <div :key="currentMainCat + currentSubCat">

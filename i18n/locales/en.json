@@ -4,15 +4,15 @@
   "categories": {
     "breakfast": "Breakfast",
     "main_courses": "Main Courses",
-    "snacks": "Quick Bites",
+    "snacks": "Bites",
     "alcohol": "Alcohol",
-    "soft_drinks": "Soft Drinks"
+    "soft_drinks": "Soft Drınks"
   },
   "subCategories": {
     "classic": "Classic",
     "hots": "Warm Plates",
     "salads": "Salads",
-    "grill_burger": "Grill & Burgers",
+    "grill_burger": "Traditional Meatballs & Turkish Ravioli (Manti)",
     "pastas": "Pastas",
     "pizzas": "Pizzas",
     "cold_beverages": "Cold Beverages",
@@ -36,7 +36,7 @@
   "snacks": {
     "mini_burger_name": "Mini Burger Trio",
     "mini_burger_desc": "Three mini burgers served in soft buns with a side of crispy fries.",
-    "taco_name": "Taco Trio",
+    "taco_name": "Trio",
     "taco_desc": "Served with specially seasoned minced meat, corn, and fresh tomatoes.",
     "mozzarella_name": "Crispy Mozzarella Sticks",
     "mozzarella_desc": "Panko-crusted mozzarella sticks with signature tomato sauce.",
@@ -79,9 +79,9 @@
     "white": "Kumkale Narince Emir (White)",
     "white-2": "Kumkale Kinali Yapincak (White)",
     "ros": "Kabatepe Blush (Rosé)",
-    "carlsberg": "Carlsberg",
-    "tuborg": "Tuborg",
-    "miller": "Miller",
+   "carlsberg": "Carlsberg (33 cl)",
+  "tuborg": "Tuborg (50 cl)",
+  "miller": "Miller (33 cl)",
     "suvla_glass": "Suvla Glass (Red / White)",
     "whisky_gin": "Whiskey / Gin Tonic",
     "raki_70": "Rakı (70 cl)",
@@ -97,10 +97,11 @@
     "latte": "Latte"
   },
   "soft": {
-    "water": "Water",
+    "water_k": "Small Water (0.33 l)",
+    "water_b": "Large Water (0.75 l)",
     "soda": "Sparkling Water",
     "cola": "Cola",
-    "ice_tea": "Ice Tea"
+    "ice_tea": "Lipton Ice Tea"
   },
   "beverages": {
     "lemonade": "Homemade Lemonade",
