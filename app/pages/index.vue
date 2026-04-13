@@ -15,7 +15,6 @@
           src="/logo/denizkabugulogoson.svg" 
           :width="160"
           :height="160"
-          sizes="160px"
           class="object-contain logo-enhance w-[150px] h-auto" 
           loading="eager"
           alt="Deniz Kabuğu Hotel"
@@ -28,7 +27,9 @@
         <button v-for="(data, key) in menuData" :key="key" @click="changeCategory(key as string)"
                 :class="['flex items-center gap-2 px-4 py-2 rounded-full text-[10px] uppercase font-bold transition-all border shrink-0', 
                          currentMainCat === key ? 'bg-hotel-dark text-white border-hotel-dark shadow-md' : 'bg-white text-hotel-accent border-hotel-accent/20 hover:border-hotel-accent/50']">
-          <component :is="getIcon(data.icon)" :size="12" />
+          <span class="material-symbols-outlined !text-[14px]">
+            {{ data.icon }}
+          </span>
           {{ $t(`categories.${data.translationKey}`) }}
         </button>
       </div>
@@ -40,9 +41,9 @@
           <button v-for="(_, subKey) in activeCategory.subs" :key="subKey" 
                   @click="currentSubCat = subKey as string"
                   :class="['text-[11px] uppercase tracking-[0.15em] transition-all whitespace-nowrap relative pb-1 font-bold shrink-0', 
-                           currentSubCat === subKey 
-                            ? 'text-hotel-dark border-b-2 border-hotel-blue' 
-                            : 'text-hotel-dark/40 hover:text-hotel-dark']">
+                            currentSubCat === subKey 
+                              ? 'text-hotel-dark border-b-2 border-hotel-blue' 
+                              : 'text-hotel-dark/40 hover:text-hotel-dark']">
             {{ $t(`subCategories.${subKey}`) }}
           </button>
         </div>
@@ -50,23 +51,26 @@
     </div>
 
     <main class="max-w-2xl mx-auto px-6 pt-8 min-h-[400px]">
-      <div class="h-44 rounded-[2rem] overflow-hidden shadow-xl mb-10 border-4 border-white relative bg-gray-50">
+      
+      <div class="aspect-video w-full rounded-[2rem] overflow-hidden shadow-xl mb-10 border-4 border-white relative bg-gray-50">
         <Transition name="scale" mode="out-in">
           <NuxtImg 
-            :key="activeCategory.image" 
-            :src="activeCategory.image" 
-            width="768" 
-            height="432" 
-            class="w-full h-full object-cover"
+            :key="activeDisplayImage" 
+            :src="activeDisplayImage" 
+            :width="800" 
+            :height="450" 
+            class="w-full h-full object-cover transition-all duration-500"
+            :class="imageClass"
             format="webp"
-            alt="Category Header"
+            quality="85"
+            alt="Menu Image"
           />
         </Transition>
       </div>
 
       <Transition name="fade" mode="out-in">
         <div :key="currentMainCat + currentSubCat">
-           <MenuList :items="activeCategory.subs[currentSubCat]" />
+           <MenuList :items="activeSubItems" />
         </div>
       </Transition>
     </main>
@@ -76,45 +80,40 @@
         <div class="max-w-2xl mx-auto px-6 flex flex-wrap justify-center gap-4">
           <a href="https://wa.me/905333018323" target="_blank" 
              class="flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-full text-[11px] font-bold uppercase tracking-widest shadow-md hover:scale-105 transition-all">
-             <LucideMessageCircle :size="14" /> {{ $t('footer.whatsapp_btn') }}
+             <span class="material-symbols-outlined !text-[16px]">chat</span> {{ $t('footer.whatsapp_btn') }}
           </a>
           <a href="tel:+902327168090" 
              class="flex items-center gap-2 px-6 py-3 bg-hotel-dark text-white rounded-full text-[11px] font-bold uppercase tracking-widest shadow-md hover:scale-105 transition-all">
-             <LucidePhone :size="14" /> {{ $t('footer.call_btn') }}
+             <span class="material-symbols-outlined !text-[16px]">call</span> {{ $t('footer.call_btn') }}
           </a>
         </div>
       </div>
 
-      <div class="max-w-2xl mx-auto px-8 py-16">
+      <div class="max-w-2xl mx-auto px-8 py-16 text-center md:text-left">
         <div class="flex flex-col md:flex-row justify-between gap-12">
-          
-          <div class="flex-1 space-y-4 text-center md:text-left">
+          <div class="flex-1 space-y-4">
             <h3 class="font-serif italic text-2xl text-hotel-dark font-bold uppercase tracking-tight">
               {{ $t('hotelName') }}
             </h3>
             <div class="flex items-start justify-center md:justify-start gap-3 text-[12px] text-hotel-accent leading-relaxed">
-              <LucideMapPin :size="16" class="shrink-0 text-hotel-blue mt-1" />
+              <span class="material-symbols-outlined text-hotel-blue shrink-0 mt-1 !text-[18px]">location_on</span>
               <p>Alaçatı Mah, 12080 Sok No:6,<br />35930 Çeşme/İzmir, Türkiye</p>
             </div>
           </div>
 
-          <div class="flex-1 space-y-6 text-center md:text-left">
+          <div class="flex-1 space-y-6">
             <h4 class="text-[10px] uppercase tracking-[0.3em] text-hotel-dark font-black">
               {{ $t('footer.contact_title') }}
             </h4>
             <div class="flex flex-col gap-4 text-[13px] text-hotel-accent font-medium">
               <a href="tel:+902327168090" class="hover:text-hotel-blue transition-colors flex items-center justify-center md:justify-start gap-3">
-                <LucidePhoneCall :size="14" /> +90 232 716 80 90
-              </a>
-              <a href="tel:+905333018323" class="hover:text-hotel-blue transition-colors flex items-center justify-center md:justify-start gap-3">
-                <LucideSmartphone :size="14" /> +90 533 301 83 23
+                <span class="material-symbols-outlined !text-[16px]">phone_in_talk</span> +90 232 716 80 90
               </a>
               <a href="mailto:info@denizkabuguhotel.com" class="hover:text-hotel-blue transition-colors flex items-center justify-center md:justify-start gap-3">
-                <LucideMail :size="14" /> info@denizkabuguhotel.com
+                <span class="material-symbols-outlined !text-[16px]">mail</span> info@denizkabuguhotel.com
               </a>
             </div>
           </div>
-
         </div>
 
         <div class="mt-16 pt-8 border-t border-hotel-accent/10 text-center">
@@ -128,23 +127,31 @@
 </template>
 
 <script setup lang="ts">
-import * as LucideIcons from 'lucide-vue-next';
-import { 
-  MessageCircle as LucideMessageCircle, 
-  Phone as LucidePhone, 
-  MapPin as LucideMapPin, 
-  Mail as LucideMail,
-  PhoneCall as LucidePhoneCall,
-  Smartphone as LucideSmartphone
-} from 'lucide-vue-next';
-
 const { menuData, currentMainCat, currentSubCat } = useMenu();
 const { locale, locales, setLocale } = useI18n();
 
-const getIcon = (iconName: string) => (LucideIcons as any)[iconName] || LucideIcons.LayoutGrid;
-
 const activeCategory = computed(() => {
   return menuData[currentMainCat.value] || { subs: {}, image: '' };
+});
+
+const activeDisplayImage = computed(() => {
+  const sub = activeCategory.value.subs[currentSubCat.value];
+  return (sub && typeof sub === 'object' && sub.image) ? sub.image : activeCategory.value.image;
+});
+
+// Resmin hizalamasını (top, center, bottom) belirler
+const imageClass = computed(() => {
+  const sub = activeCategory.value.subs[currentSubCat.value];
+  const pos = (sub && typeof sub === 'object' && sub.position) ? sub.position : 'center';
+  
+  if (pos === 'top') return 'object-top';
+  if (pos === 'bottom') return 'object-bottom';
+  return 'object-center';
+});
+
+const activeSubItems = computed(() => {
+  const sub = activeCategory.value.subs[currentSubCat.value];
+  return (sub && typeof sub === 'object' && sub.items) ? sub.items : [];
 });
 
 const changeCategory = (name: string) => {
@@ -152,23 +159,29 @@ const changeCategory = (name: string) => {
   currentMainCat.value = name;
   const subKeys = Object.keys(menuData[name]?.subs || {});
   currentSubCat.value = subKeys.length > 0 ? (subKeys[0] as string) : "";
-  
-  if (import.meta.client) {
-    window.scrollTo({ top: 150, behavior: 'smooth' });
-  }
+  if (import.meta.client) window.scrollTo({ top: 180, behavior: 'smooth' });
 };
+
+useHead({
+  title: 'Deniz Kabuğu Hotel - Alaçatı Menü',
+  meta: [{ name: 'description', content: 'Alaçatı mutfağından eşsiz lezzetler.' }]
+})
 </script>
 
 <style scoped>
-.logo-enhance { filter: contrast(1.1) brightness(0.9); }
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
 .fade-enter-active, .fade-leave-active { transition: opacity 0.25s ease, transform 0.25s ease; }
-.fade-enter-from { opacity: 0; transform: translateY(8px); }
-.fade-leave-to { opacity: 0; transform: translateY(-8px); }
+.fade-enter-from { opacity: 0; transform: translateY(10px); }
+.fade-leave-to { opacity: 0; transform: translateY(-10px); }
 
-.scale-enter-active, .scale-leave-active { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+.scale-enter-active, .scale-leave-active { transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
 .scale-enter-from { opacity: 0; transform: scale(1.03); }
 .scale-leave-to { opacity: 0; transform: scale(0.97); }
 </style>

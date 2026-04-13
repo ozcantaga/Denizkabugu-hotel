@@ -4,43 +4,48 @@
   "categories": {
     "breakfast": "Kahvaltı",
     "main_courses": "Ana Yemekler",
-    "salads": "Salatalar",
-    "snacks": "Atıştırmalıklar",
+    "snacks": "Hızlı Lezzetler",
     "alcohol": "Alkol",
-    "soft_drinks": "Sıcak & Soğuk"
+    "soft_drinks": "Soft Drinks"
   },
   "subCategories": {
     "classic": "Klasik",
     "hots": "Sıcaklar",
-    "cold": "Soğuklar",
-    "appetizers": "Başlangıçlar",
-    "grill_burger": "Izgara & Burger",
+    "salads": "Salatalar",
+    "grill_burger": "Izgara & Burgerler",
     "pastas": "Makarnalar",
-    "beers": "Bira",
-    "whiskey": "Viski",
-    "raki": "Rakı",
+    "pizzas": "Pizzalar",
     "cold_beverages": "Soğuk İçecekler",
     "hot_beverages": "Sıcak İçecekler",
-    "salads":"Salatalar",
-    "sides":"Yan Lezzetler"
+    "beers": "Biralar",
+    "wines": "Şaraplar",
+    "spirits": "Sert İçkiler"
   },
   "breakfast": {
-    "serpme_name": "Serpme Kahvaltı",
-    "serpme_desc": "Peynir çeşitleri, bal-kaymak, zeytinler ve sıcak başlangıçlar.",
-    "omlet_name": "Omlet",
-    "omlet_desc": "Taze çiftlik yumurtası ve tereyağı ile.",
+    "serpme_name": "Deniz Kabuğu Serpme Kahvaltı",
+    "serpme_desc": "Peynir ve zeytin çeşitleri, ev yapımı reçeller, bal-tereyağı, yaz domatesi, acılı ezme, tahinli lor sürmesi, hamur işleri, lorlu çingen pilavı ve sıcak eşlikçiler.",
+    "plain_omlet_name": "Sade Omlet",
+    "plain_omlet_desc": "Serbest gezen tavuk yumurtası ile hazırlanan klasik omlet.",
+    "herb_omlet_name": "Otlu Peynirli Omlet",
+    "herb_omlet_desc": "Serbest gezen tavuk yumurtası, taze otlar ve peynir ile hazırlanır.",
+    "potato_omlet_name": "Patatesli Omlet",
+    "potato_omlet_desc": "Serbest gezen tavuk yumurtası ve patates ile hazırlanan doyurucu omlet.",
     "menemen_name": "Menemen",
-    "menemen_desc": "Geleneksel domates, biber ve yumurta karışımı."
+    "menemen_desc": "Serbest gezen tavuk yumurtası, tarla domatesi ve biber ile hazırlanır."
   },
   "snacks": {
-    "burger_name": "Klasik Burger",
-    "burger_desc": "180gr dana köfte, karamelize soğan ve patates kızartması.",
-    "manti_name": "Ev Mantısı",
-    "manti_desc": "Yoğurt ve yanık tereyağı ile el açması geleneksel mantı.",
-    "taco_name": "Sokak Tacoları",
-    "taco_desc": "Ağır ateşte pişmiş dana kaburga ve pico de gallo.",
     "mini_burger_name": "Mini Burger Üçlüsü",
-    "mini_burger_desc": "Ev yapımı soslar ve cheddar peyniri ile 3'lü set."
+    "mini_burger_desc": "Yumuşak ekmekler arasında servis edilen üç mini burger, yanında çıtır patates ile.",
+    "taco_name": "Taco Üçlüsü",
+    "taco_desc": "Özel baharatlarla hazırlanmış kıyma, mısır ve taze domates ile servis edilir.",
+    "mozzarella_name": "Çıtır Mozzarella Stick",
+    "mozzarella_desc": "Pankolu mozzarella çubukları, özel domates sos ile.",
+    "calamari_name": "Çıtır Kalamar",
+    "calamari_desc": "Altın renginde kızartılmış kalamar, limon ve acılı mayonez sos ile servis edilir.",
+    "yogurt_fries_name": "Acılı Yoğurtlu Patates",
+    "yogurt_fries_desc": "Çıtır patates üzerine yoğurt ve baharatlı sos ile.",
+    "jalapeno_bites_name": "Jalapeno Peynir Topları",
+    "jalapeno_bites_desc": "İçi peynir dolu, hafif acılı çıtır toplar."
   },
   "salads": {
     "greek_name": "Yunan Salatası",
@@ -51,34 +56,32 @@
     "special_desc": "Mevsim yeşillikleri, ceviz, nar ekşisi ve şefin özel sosu."
   },
   "main": {
+    "anne_kofte_name": "Anne Köftesi",
+    "anne_kofte_desc": "Ev usulü köfte, tereyağlı arpa şehriye ve acılı yoğurt sos ile servis edilir.",
+    "manti_name": "Ev Mantısı",
+    "manti_desc": "El yapımı mantı, yoğurt ve tereyağlı sos ile servis edilir.",
+    "denizkabugu_burger_name": "Deniz Kabuğu Burger",
+    "denizkabugu_burger_desc": "Özel hamburger köftesi, domates, soğan ve özel sos. Yanında çıtır patates ile.",
+    "lemon_pasta_name": "Limonlu Yaz Makarnası",
+    "lemon_pasta_desc": "Taze limon, zeytinyağı ve parmesan ile hazırlanan ferah makarna.",
     "bolonez_name": "Spagetti Bolonez",
-    "bolonez_desc": "Parmesan peyniri eşliğinde geleneksel kıymalı sos.",
-    "kofte_name": "Kasap Köfte",
-    "kofte_desc": "Izgara baharatlı köfte, pilav ve közlenmiş biber.",
-    "arrabiata_name": "Penne Arrabiata",
-    "arrabiata_desc": "Sarımsak, acı pul biber ve acılı domates sosu.",
-    "pesto_name": "Pesto Soslu Makarna",
-    "pesto_desc": "Taze fesleğen, çam fıstığı ve parmesanlı sos.",
-    "chef_burger_name": "Şefin İmza Burgeri",
-    "chef_burger_desc": "180gr sulu dana köfte ve şefin gizli sosu.",
-   "fries_name": "Patates Kızartması",
-    "fries_desc": "Çıtır patates, trüflü mayonez ile."
+    "bolonez_desc": "Uzun saatler pişirilmiş et sos ile hazırlanan klasik makarna.",
+    "arrabiata_name": "Penne Arrabbiata",
+    "arrabiata_desc": "Hafif acılı domates sos ile hazırlanan penne makarna.",
+    "denizkabugu_pizza_name": "Deniz Kabuğu Pizza",
+    "denizkabugu_pizza_desc": "Domates sos, beyaz peynir, tulum, çeçil ve mozzarella ile özel peynirli pizza.",
+    "akdeniz_pizza_name": "Akdeniz Pizza",
+"akdeniz_pizza_desc": "Domates sos, beyaz peynir, zeytin ve kekik ile hazırlanan Akdeniz usulü pizza."
   },
   "alcohol": {
-    "carlsberg": "Carlsberg 33cl",
-    "miller": "Miller 33cl",
-    "corona": "Corona 35.5cl",
-    "jack_daniels": "Jack Daniels",
-    "chivas": "Chivas Regal 12 Y.O",
-    "jameson": "Jameson Irish",
-    "raki_70": "Yeni Rakı 70cl",
-    "raki_35": "Yeni Rakı 35cl",
-    "raki_gobek": "Beylerbeyi Göbek 70cl",
-    "jd_desc": "Karamel ve meşe notalı Tennessee viskisi.",
-    "chivas_desc": "Premium harmanlanmış İskoç viskisi.",
-    "raki_std_desc": "Yumuşak bitişli, saf anason aroması.",
-    "raki_prem_desc": "3 kez distile edilmiş, %100 yaş üzüm suması.",
-    "jameson_desc": "Triple distilled, smooth and balanced Irish whiskey with floral and spicy notes."
+    "carlsberg": "Carlsberg",
+    "tuborg": "Tuborg",
+    "miller": "Miller",
+    "suvla_glass": "Suvla Kadeh (Kırmızı / Beyaz)",
+    "whisky_gin": "Viski / Gin Tonic",
+    "raki_70": "Rakı (70 cl)",
+    "glass": "Kadeh",
+    "bottle": "Şişe"
   },
   "hot": {
     "turkish_coffee": "Türk Kahvesi",
@@ -90,9 +93,16 @@
   },
   "soft": {
     "water": "Su",
-    "soda": "Sade Soda",
+    "soda": "Soda",
     "cola": "Cola",
-    "ice_tea": "Lipton Ice Tea"
+    "ice_tea": "Ice Tea"
+  },
+  "beverages": {
+    "lemonade": "Ev Yapımı Limonata",
+    "tahiti_iced_tea": "Tahiti Iced Tea",
+    "tahiti_desc": "Limon otu, hibiskus ve ananasın ferahlatıcı uyumu ile tropik aromalar sunar.",
+    "refresh_iced_tea": "Refresh Iced Tea",
+    "refresh_desc": "Satsuma, ananas ve hibiskus notaları ile hazırlanan ferahlatıcı soğuk çay."
   },
   "tags": {
     "popular": "Popüler",
@@ -101,22 +111,13 @@
   },
   "ui": {
     "currency": "₺",
-    "bottle": "Şişe",
+    "order_for_tomorrow": "Yarın 17:00'den sonra servis edilir",
     "glass": "Kadeh",
-    "service_note": "Fiyatlarımıza KDV dahildir.",
-    "order_before_17": "17:00 öncesi siparişe uygundur",
-    "closed_after_17": "17:00 sonrası kapalıdır",
-    "order_after_17": "Akşam servisi",
-    "available_after_17": "17:00'den sonra açılacaktır",
-   
-  "closed": "Servis Dışı",
-  "available": "Hemen Sipariş Verilebilir",
-  "order_for_tomorrow": "Yarın İçin Ön Sipariş Alınır"
+    "bottle": "Şişe"
   },
   "footer": {
-    "address_title": "Adres",
-    "contact_title": "İletişim Bilgileri",
-    "whatsapp_btn": "WhatsApp",
-    "call_btn": "Hemen Ara"
+    "whatsapp_btn": "WhatsApp Destek",
+    "call_btn": "Hemen Ara",
+    "contact_title": "İletişim & Rezervasyon"
   }
 }

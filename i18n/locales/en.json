@@ -4,82 +4,84 @@
   "categories": {
     "breakfast": "Breakfast",
     "main_courses": "Main Courses",
-    "salads": "Salads",
     "snacks": "Quick Bites",
     "alcohol": "Alcohol",
-    "soft_drinks": "Hot & Cold"
+    "soft_drinks": "Soft Drinks"
   },
   "subCategories": {
     "classic": "Classic",
-    "hots": "Hot Plates",
-    "cold": "Cold Plates",
-    "appetizers": "Appetizers",
+    "hots": "Warm Plates",
+    "salads": "Salads",
     "grill_burger": "Grill & Burgers",
     "pastas": "Pastas",
-    "beers": "Beers",
-    "whiskey": "Whiskey",
-    "raki": "Raki",
+    "pizzas": "Pizzas",
     "cold_beverages": "Cold Beverages",
     "hot_beverages": "Hot Beverages",
-    "salads":"Salads",
-    "sides": "Side Dishes"
-    
+    "beers": "Beers",
+    "wines": "Wines",
+    "spirits": "Spirits"
   },
   "breakfast": {
-    "serpme_name": "Full Spread Breakfast",
-    "serpme_desc": "Assorted cheeses, honey-clotted cream, olives, and hot appetizers.",
-    "omlet_name": "Omelette",
-    "omlet_desc": "Made with fresh farm eggs and butter.",
+    "serpme_name": "Deniz Kabuğu Turkish Breakfast (Serpme)",
+    "serpme_desc": "Selection of cheeses and olives, homemade jams, honey & butter, summer tomatoes, spicy dip, tahini-curd spread, pastries, 'Çingene' salad and seasonal warm sides.",
+    "plain_omlet_name": "Plain Omelette",
+    "plain_omlet_desc": "Classic omelette prepared with free-range eggs.",
+    "herb_omlet_name": "Herb & Cheese Omelette",
+    "herb_omlet_desc": "Prepared with free-range eggs, fresh herbs, and local cheese.",
+    "potato_omlet_name": "Potato Omelette",
+    "potato_omlet_desc": "Hearty omelette with potatoes, made with free-range eggs.",
     "menemen_name": "Menemen",
-    "menemen_desc": "Traditional Turkish scrambled eggs with tomatoes and peppers."
+    "menemen_desc": "Traditional Turkish scrambled eggs with field tomatoes and green peppers."
   },
   "snacks": {
-    "burger_name": "Classic Burger",
-    "burger_desc": "180g beef patty, caramelized onions and crispy fries.",
-    "manti_name": "Homemade Manti",
-    "manti_desc": "Hand-rolled Turkish dumplings with yogurt and burnt butter.",
-    "taco_name": "Street Tacos",
-    "taco_desc": "Slow-cooked beef rib, cilantro, lime and pico de gallo.",
     "mini_burger_name": "Mini Burger Trio",
-    "mini_burger_desc": "House-made sauces and melted cheddar cheese sliders."
+    "mini_burger_desc": "Three mini burgers served in soft buns with a side of crispy fries.",
+    "taco_name": "Taco Trio",
+    "taco_desc": "Served with specially seasoned minced meat, corn, and fresh tomatoes.",
+    "mozzarella_name": "Crispy Mozzarella Sticks",
+    "mozzarella_desc": "Panko-crusted mozzarella sticks with signature tomato sauce.",
+    "calamari_name": "Crispy Calamari",
+    "calamari_desc": "Golden fried calamari served with lemon and spicy mayo sauce.",
+    "yogurt_fries_name": "Spicy Yogurt Fries",
+    "yogurt_fries_desc": "Crispy fries topped with yogurt and a spicy butter sauce.",
+    "jalapeno_bites_name": "Jalapeno Cheese Bites",
+    "jalapeno_bites_desc": "Crispy balls filled with melted cheese and a hint of jalapeno."
   },
   "salads": {
     "greek_name": "Greek Salad",
-    "greek_desc": "Tomatoes, cucumbers, feta cheese, olives, and red onions.",
-    "coban_name": "Shepherd's Salad",
-    "coban_desc": "Finely chopped garden vegetables with lemon dressing.",
+    "greek_desc": "Tomatoes, cucumbers, feta cheese, olives, and oregano.",
+    "coban_name": "Choban (Shepherd's) Salad",
+    "coban_desc": "Finely chopped tomatoes, cucumbers, and onions with lemon dressing.",
     "special_name": "Deniz Kabuğu Special",
-    "special_desc": "Seasonal greens, walnuts, pomegranate, and chef's vinaigrette."
+    "special_desc": "Seasonal greens, walnuts, pomegranate molasses, and chef's special dressing."
   },
   "main": {
+    "anne_kofte_name": "Mom's Meatballs",
+    "anne_kofte_desc": "Home-style meatballs served with buttered orzo and spicy yogurt sauce.",
+    "manti_name": "Handmade Manti",
+    "manti_desc": "Traditional Turkish dumplings served with yogurt and hot butter sauce.",
+    "denizkabugu_burger_name": "Deniz Kabuğu Burger",
+    "denizkabugu_burger_desc": "Special burger patty, tomatoes, onions, and signature sauce. Served with crispy fries.",
+    "lemon_pasta_name": "Lemon Summer Pasta",
+    "lemon_pasta_desc": "Refreshing pasta prepared with fresh lemon, olive oil, and parmesan.",
     "bolonez_name": "Spaghetti Bolognese",
-    "bolonez_desc": "Traditional Italian meat sauce with aged parmesan.",
-    "kofte_name": "Butcher's Meatballs",
-    "kofte_desc": "Grilled spiced meatballs with rice and roasted peppers.",
-    "arrabiata_name": "Penne Arrabiata",
-    "arrabiata_desc": "Spicy tomato sauce with garlic and fresh parsley.",
-    "pesto_name": "Penne Pesto Basilico",
-    "pesto_desc": "Fresh basil, pine nuts, and parmesan blended with olive oil.",
-    "chef_burger_name": "Chef's Signature Burger",
-    "chef_burger_desc": "180g juicy beef patty with our chef's secret sauce.",
-     "fries_name": "French Fries", 
-    "fries_desc": "Crispy golden fries served with truffle mayo."
+    "bolonez_desc": "Classic pasta with slow-cooked meat sauce.",
+    "arrabiata_name": "Penne Arrabbiata",
+    "arrabiata_desc": "Penne pasta with a spicy tomato sauce.",
+    "denizkabugu_pizza_name": "Deniz Kabuğu Pizza",
+    "denizkabugu_pizza_desc": "Special cheese pizza with tomato sauce, feta, tulum, cecil, and mozzarella.",
+    "akdeniz_pizza_name": "Mediterranean Pizza",
+"akdeniz_pizza_desc": "Mediterranean style pizza with tomato sauce, white cheese, olives and oregano."
   },
   "alcohol": {
-    "carlsberg": "Carlsberg 33cl",
-    "miller": "Miller 33cl",
-    "corona": "Corona 35.5cl",
-    "jack_daniels": "Jack Daniels",
-    "chivas": "Chivas Regal 12 Y.O",
-    "jameson": "Jameson Irish",
-    "raki_70": "Yeni Rakı 70cl",
-    "raki_35": "Yeni Rakı 35cl",
-    "raki_gobek": "Beylerbeyi Göbek 70cl",
-    "jd_desc": "Tennessee whiskey with caramel and oak notes.",
-    "chivas_desc": "Premium blended Scotch whiskey.",
-    "raki_std_desc": "Pure anise flavor with a smooth finish.",
-    "raki_prem_desc": "Triple distilled, 100% fresh grape spirit.",
-    "jameson_desc": "Triple distilled, smooth and balanced Irish whiskey."
+    "carlsberg": "Carlsberg",
+    "tuborg": "Tuborg",
+    "miller": "Miller",
+    "suvla_glass": "Suvla Glass (Red / White)",
+    "whisky_gin": "Whiskey / Gin Tonic",
+    "raki_70": "Rakı (70 cl)",
+    "glass": "Glass",
+    "bottle": "Bottle"
   },
   "hot": {
     "turkish_coffee": "Turkish Coffee",
@@ -91,9 +93,16 @@
   },
   "soft": {
     "water": "Water",
-    "soda": "Mineral Water",
+    "soda": "Sparkling Water",
     "cola": "Cola",
-    "ice_tea": "Lipton Ice Tea"
+    "ice_tea": "Ice Tea"
+  },
+  "beverages": {
+    "lemonade": "Homemade Lemonade",
+    "tahiti_iced_tea": "Tahiti Iced Tea",
+    "tahiti_desc": "Tropical notes with a refreshing blend of lemongrass, hibiscus, and pineapple.",
+    "refresh_iced_tea": "Refresh Iced Tea",
+    "refresh_desc": "Refreshing cold tea prepared with satsuma, pineapple, and hibiscus notes."
   },
   "tags": {
     "popular": "Popular",
@@ -102,22 +111,13 @@
   },
   "ui": {
     "currency": "₺",
-    "bottle": "Bottle",
+    "order_for_tomorrow": "Served after 17:00 tomorrow",
     "glass": "Glass",
-    "service_note": "VAT is included in our prices.",
-    "order_before_17": "Available before 17:00",
-    "closed_after_17": "Closed after 17:00",
-    "order_after_17": "Evening service",
-    "available_after_17": "Available after 17:00",
-  
-  "closed": "Not Available",
-  "available": "Available Now",
-  "order_for_tomorrow": "Pre-order for Tomorrow"
+    "bottle": "Bottle"
   },
   "footer": {
-    "address_title": "Address",
-    "contact_title": "Contact Information",
-    "whatsapp_btn": "WhatsApp",
-    "call_btn": "Call Now"
+    "whatsapp_btn": "WhatsApp Support",
+    "call_btn": "Call Now",
+    "contact_title": "Contact & Reservation"
   }
 }

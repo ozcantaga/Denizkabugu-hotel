@@ -17,7 +17,7 @@
           :width="160"
           :height="160"
           sizes="160px"
-          class="w-full h-full object-contain logo-filter" 
+          class="w-full h-full object-contain logo-filter " 
           alt="Deniz Kabuğu Logo" 
           loading="eager"
         />

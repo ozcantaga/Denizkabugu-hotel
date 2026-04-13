@@ -23,6 +23,9 @@ export default defineNuxtConfig({
         { 
           rel: 'stylesheet', 
           href: 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;600;700&display=swap' 
+        },{ 
+          rel: 'stylesheet', 
+          href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200' 
         }
       ]
     }
@@ -37,7 +40,7 @@ image: {
       lg: 640,
       xl: 768
     },
-    format: ['webp', 'avif'],
+    format: ['webp', 'avif','jpeg'],
     quality: 80,
   },
 
