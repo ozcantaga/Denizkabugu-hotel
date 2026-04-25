@@ -27,7 +27,7 @@ export const useMenu = () => {
           image: "/images/snacks/snack-v1.jpg",
           position: 'center',
           items: [
-            { id: 's1', name: "snacks.mini_burger_name", ingredients: "snacks.mini_burger_desc", price: 480, tag: "signature", icon: "Fastfood" },
+            { id: 's1', name: "snacks.mini_burger_name", ingredients: "snacks.mini_burger_desc", price:580, tag: "signature", icon: "Fastfood" },
             { id: 's2', name: "snacks.taco_name", ingredients: "snacks.taco_desc", price: 480, tag: "new", icon: "taco" },
             { id: 's3', name: "snacks.mozzarella_name", ingredients: "snacks.mozzarella_desc", price: 420, icon: "bakery_dining" },
             { id: 's4', name: "snacks.calamari_name", ingredients: "snacks.calamari_desc", price: 480, icon: "set_meal" },
