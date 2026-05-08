@@ -9,7 +9,7 @@ export const useMenu = () => {
           image: "/images/breakfast/breakfast-v1.jpeg",
           position: 'center',
           items: [
-            { id: 'k1', name: "breakfast.serpme_name", ingredients: "breakfast.serpme_desc", price: 1000, tag: "popular", icon: "flatware" },
+            { id: 'k1', name: "breakfast.serpme_name", ingredients: "breakfast.serpme_desc", price:1250, tag: "popular", icon: "flatware" },
             { id: 'k2', name: "breakfast.plain_omlet_name", ingredients: "breakfast.plain_omlet_desc", price: 350, icon: "egg" },
             { id: 'k3', name: "breakfast.herb_omlet_name", ingredients: "breakfast.herb_omlet_desc", price: 450, icon: "egg" },
             { id: 'k4', name: "breakfast.potato_omlet_name", ingredients: "breakfast.potato_omlet_desc", price: 450, icon: "egg" },
