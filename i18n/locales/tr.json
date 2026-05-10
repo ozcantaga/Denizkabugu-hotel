@@ -121,7 +121,7 @@
   "ui": {
     "currency": "₺",
     "order_for_tomorrow": "Yarın 17:00'den sonra servis edilir",
-    "glass": "Kadeh",
+    "glass": "min_2 Kadeh",
     "bottle": "Şişe"
   },
   "footer": {
