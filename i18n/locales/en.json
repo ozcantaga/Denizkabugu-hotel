@@ -121,7 +121,7 @@
   "ui": {
     "currency": "₺",
     "order_for_tomorrow": "Served after 17:00 tomorrow",
-    "glass": "min_2 Glass",
+    "glass": "Glass",
     "bottle": "Bottle"
   },
   "footer": {
