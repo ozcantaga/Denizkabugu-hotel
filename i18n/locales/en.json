@@ -90,6 +90,9 @@
   },
   "hot": {
     "turkish_coffee": "Turkish Coffee",
+    "turkish_tea": "Turkish Tea",
+    "turkish_teapot": "Pot of Tea",
+    "turkish_herbal_tea": "Herbal Tea",
     "mastic_coffee": "Mastic Turkish Coffee",
     "filter_coffee": "Filter Coffee",
     "espresso": "Espresso",
