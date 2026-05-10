@@ -94,11 +94,14 @@ export const useMenu = () => {
           position: 'center',
           items: [
             { id: 'h1', name: "hot.turkish_coffee", price: 150, icon: 'coffee' },
-            { id: 'h2', name: "hot.mastic_coffee", price: 150, icon: 'coffee' },
-            { id: 'h3', name: "hot.filter_coffee", price: 180, icon: 'coffee_maker' },
-            { id: 'h4', name: "hot.espresso", price: 200, icon: 'bolt' },
-            { id: 'h5', name: "hot.americano", price: 200, icon: 'local_cafe' },
-            { id: 'h6', name: "hot.latte", price: 200, icon: 'emoji_food_beverage' }
+             { id: 'h2', name: "hot.turkish_tea", price: 65, icon: 'emoji_food_beverage' },
+             { id: 'h3', name: "hot.turkish_teapot", price:300, icon: 'coffeemaker' },
+             { id: 'h4', name: "hot.turkish_herbal_tea", price:65, icon: 'spa' },
+            { id: 'h5', name: "hot.mastic_coffee", price: 150, icon: 'coffee' },
+            { id: 'h6', name: "hot.filter_coffee", price: 180, icon: 'coffee_maker' },
+            { id: 'h7', name: "hot.espresso", price: 200, icon: 'bolt' },
+            { id: 'h8', name: "hot.americano", price: 200, icon: 'local_cafe' },
+            { id: 'h9', name: "hot.latte", price: 200, icon: 'emoji_food_beverage' }
           ]
         }
       }
@@ -121,9 +124,9 @@ export const useMenu = () => {
           image: "/images/wine/wine.webp",
           position: 'center',
           items: [
-            { id: 'w1', name: "alcohol.red", cl: "18 cl / 75 cl", price: 390, bottlePrice: 1560, icon: "wine_bar" },
-            { id: 'w3', name: "alcohol.white", cl: "18 cl / 75 cl", price: 390, bottlePrice: 1560, icon: "wine_bar" },
-            { id: 'w5', name: "alcohol.ros", cl: "18 cl / 75 cl", price: 390, bottlePrice: 1560, icon: "wine_bar" }
+            { id: 'w1', name: "alcohol.red", cl: "18 cl / 75 cl", price:780, bottlePrice: 1560, icon: "wine_bar" },
+            { id: 'w3', name: "alcohol.white", cl: "18 cl / 75 cl", price:780, bottlePrice: 1560, icon: "wine_bar" },
+            { id: 'w5', name: "alcohol.ros", cl: "18 cl / 75 cl", price:780, bottlePrice: 1560, icon: "wine_bar" }
           ]
         },
         "spirits": {
