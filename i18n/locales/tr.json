@@ -90,6 +90,9 @@
   },
   "hot": {
     "turkish_coffee": "Türk Kahvesi",
+    "turkish_tea":"Turk Cayi",
+    "turkish_teapot":"Demlik Cay",
+    "turkish_herbal_tea":"Bitki Cayi",
     "mastic_coffee": "Damla Sakızlı Türk Kahvesi",
     "filter_coffee": "Filtre Kahve",
     "espresso": "Espresso",
