@@ -86,7 +86,7 @@ const safeT = (key: string | undefined) => {
         </div>
         
         <div class="flex items-baseline gap-1">
-          <span v-if="item.bottlePrice" class="text-[9px] text-hotel-accent font-bold uppercase tracking-tighter">{{ safeT('ui.glass') }}</span>
+          <span v-if="item.bottlePrice" class="text-[9px] text-hotel-accent font-bold uppercase tracking-tighter">{{item.glass}</span>
           <span class="text-base font-semibold">{{ formatPrice(item.price) }}</span>
           <span class="text-[13px] font-medium text-hotel-accent">₺</span>
         </div>
