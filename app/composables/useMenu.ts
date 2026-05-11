@@ -55,8 +55,8 @@ export const useMenu = () => {
           image: "/images/main/pastas.webp",
           position: 'center',
           items: [
-            { id: 'm4', name: "main.lemon_pasta_name", ingredients: "main.lemon_pasta_desc", price: 650, tag: "new", icon: 'dinner_dining' },
-            { id: 'm5', name: "main.bolonez_name", ingredients: "main.bolonez_desc", price: 700,  icon: 'dinner_dining' },
+            { id: 'm4', name: "main.lemon_pasta_name", ingredients: "main.lemon_pasta_desc", price: 650, tag: "new", icon: 'dinner_dining'  },
+            { id: 'm5', name: "main.bolonez_name", ingredients: "main.bolonez_desc", price: 700,  icon: 'dinner_dining'  },
             { id: 'm6', name: "main.arrabiata_name", ingredients: "main.arrabiata_desc", price: 600, icon: 'dinner_dining' }
           ]
         },
@@ -124,17 +124,17 @@ export const useMenu = () => {
           image: "/images/wine/wine.webp",
           position: 'center',
           items: [
-            { id: 'w1', name: "alcohol.red", cl: "18 cl / 75 cl", price:780, bottlePrice: 1560, icon: "wine_bar" },
-            { id: 'w3', name: "alcohol.white", cl: "18 cl / 75 cl", price:780, bottlePrice: 1560, icon: "wine_bar" },
-            { id: 'w5', name: "alcohol.ros", cl: "18 cl / 75 cl", price:780, bottlePrice: 1560, icon: "wine_bar" }
+            { id: 'w1', name: "alcohol.red", cl: "18 cl / 75 cl", price:780, bottlePrice: 1560, icon: "wine_bar",glass:"min_2 Glass" },
+            { id: 'w3', name: "alcohol.white", cl: "18 cl / 75 cl", price:780, bottlePrice: 1560, icon: "wine_bar",glass:"min_2 Glass" },
+            { id: 'w5', name: "alcohol.ros", cl: "18 cl / 75 cl", price:780, bottlePrice: 1560, icon: "wine_bar",glass:"min_2 Glass" }
           ]
         },
         "spirits": {
           image: "/images/visky/visky.webp",
           position: 'center',
           items: [
-            { id: 'sp1', name: "alcohol.whisky_gin", cl: "4 cl / 70 cl", price: 700, bottlePrice: 6500, icon: "glass_cup" },
-            { id: 'sp2', name: "alcohol.raki_70", cl: "4 cl", price: 350, bottlePrice: 3000, icon: "liquor" },
+            { id: 'sp1', name: "alcohol.whisky_gin", cl: "4 cl / 70 cl", price: 700, bottlePrice: 6500, icon: "glass_cup" ,glass:"Glass"},
+            { id: 'sp2', name: "alcohol.raki_70", cl: "4 cl", price: 350, bottlePrice: 3000, icon: "liquor" ,glass:"Glass" },
             
           ]
         }
