@@ -69,7 +69,7 @@
 
       <Transition name="fade" mode="out-in">
         <div :key="currentMainCat + currentSubCat">
-           <MenuList :items="activeSubItems" />
+           <MenuList :items="activeSubItems" :active-category="currentMainCat" />
         </div>
       </Transition>
     </main>
